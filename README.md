@@ -269,3 +269,12 @@ Or use the provided scripts:
 bash run_docker_local.sh   # local dev
 bash run_docker_prod.sh    # production
 ```
+
+
+## DB Workflow practice
+```
+1️⃣ change SQLAlchemy model
+2️⃣ alembic revision --autogenerate -m "message"
+3️⃣ review migration file
+4️⃣ alembic upgrade head
+```
